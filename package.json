@@ -2,6 +2,7 @@
   "name": "dnd-encounter",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@testing-library/jest-dom": "^5.15.1",
@@ -11,6 +12,9 @@
     "@types/node": "^16.11.10",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -19,6 +23,8 @@
   "scripts": {
     "dev": "tsc --watch --preserveWatchOutput",
     "start": "craco start",
+    "client": "react-scripts start",
+    "server": "nodemon --watch server server/server.js",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
